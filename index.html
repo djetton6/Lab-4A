@@ -15,7 +15,7 @@
     <p>Last Name:<input type="text" name="last_name_field"></p>
     <p>Phone Number:<input type="text" name="last_name_field"></p>
     <p>Email Address:<input type="text" name="email_address_field"></p>
-    <p>Gender: <input type="radio" name="gender_field" value="Male"> Male
+    <p>Gender: <input type="radio" name="gender_field" value="Male" checked="Male"> Male
                <input type="radio" name="gender_field" value="Female">Female 
     </p>
     Age: <select name="age_field">
@@ -26,10 +26,32 @@
       <option value="45-54">45-54</option>
       <option value="55-64">55-64</option>
       <option value="65 and over">65 and over</option>
+      </select>
   </fieldset>
   <fieldset>
-  	<legend><strong>Age:<in
-  </fieldset>
+  	<legend><strong>My Availability</strong></legend>
+  	 <p>Days Available:</p>
+  	 <p><input type="checkbox" name="available_field[]" value="Sunday"> Sunday</p>
+  	 <p><input type="checkbox" name="available_field[]" value="Monday"> Monday</p>
+  	 <p><input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday</p>
+  	 <p><input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday</p>
+  	 <p><input type="checkbox" name="available_field[]" value="Thursday"> Thursday</p>
+  	 <p><input type="checkbox" name="available_field[]" value="Friday"> Friday</p>
+  	 <p><input type="checkbox" name="available_field[]" value="Saturday"> Saturday</p>
+  	 <p>Any Comments?:</p>
+  	   <p>
+  	     <textarea name="comments_field" rows="10" cols="50">
+  	     </textarea>
+  	   </p>
+ </fieldset>
+      <input type="hidden" name="hidden_field" value="djetton">
+      <p><input type="submit" value="Send Me!"></p>
+ </form>
+
+</body>
+
+</html>
+  
 
 
 
